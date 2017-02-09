@@ -805,7 +805,7 @@ class DeviceDetector
     public function setCache($cache)
     {
         if ($cache instanceof Cache ||
-            (class_exists('\Doctrine\Common\Cache\CacheProvider') && $cache instanceof \Doctrine\Common\Cache\CacheProvider)
+            (class_exists('Doctrine\Common\Cache\CacheProvider') && $cache instanceof \Doctrine\Common\Cache\CacheProvider)
         ) {
             $this->cache = $cache;
             return;

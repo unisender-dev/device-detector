@@ -81,7 +81,7 @@ class DeviceDetectorTest extends \PHPUnit_Framework_TestCase
 
     public function testCacheSetAndGet()
     {
-        if ( !extension_loaded('memcache') || !class_exists('\Doctrine\Common\Cache\MemcacheCache') ) {
+        if ( !extension_loaded('memcache') || !class_exists('Doctrine\Common\Cache\MemcacheCache') ) {
             $this->markTestSkipped('memcache not enabled');
         }
 
